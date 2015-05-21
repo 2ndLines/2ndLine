@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="tabView">@style/TabView</item>
+    </style>
+
+    <!-- Navigation bar tab view style -->
+    <style name="TabView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textColor">@color/text_selector_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="iconWidth">27dp</item>
+        <item name="iconHeight">27dp</item>
+    </style>
+
+</resources>
