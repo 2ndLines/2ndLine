@@ -5,6 +5,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="tabView">@style/TabView</item>
+
     </style>
 
     <!-- Navigation bar tab view style -->
@@ -18,6 +19,11 @@
         <item name="android:textSize">12sp</item>
         <item name="iconWidth">27dp</item>
         <item name="iconHeight">27dp</item>
+    </style>
+
+    <style name="MyActionBar" parent="AppTheme">
+        <item name="android:background">@color/actionbar_bg_color</item>
+        <item name="android:textColor">@color/actionbar_text_color</item>
     </style>
 
 </resources>
