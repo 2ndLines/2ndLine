@@ -8,8 +8,4 @@
         <attr name="iconHeight" format="dimension" />
     </declare-styleable>
 
-    <attr name="tabView" format="reference" />
-    <attr name="iconWidth" format="dimension" />
-    <attr name="iconHeight" format="dimension" />
-
 </resources>

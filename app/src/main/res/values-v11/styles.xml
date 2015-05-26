@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyActionbar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar_bg_color</item>
+    </style>
+
+    <!-- action bar style does not work. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="tabView">@style/MyTabView</item>
+        <item name="android:actionBarStyle">@style/MyActionbar</item>
+    </style>
 
 </resources>

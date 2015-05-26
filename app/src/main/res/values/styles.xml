@@ -4,12 +4,13 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="tabView">@style/TabView</item>
-
+        <item name="tabView">@style/MyTabView</item>
+        <item name="android:actionBarStyle"></item>
     </style>
 
     <!-- Navigation bar tab view style -->
-    <style name="TabView">
+    <style name="MyTabView">
+        <item name="android:background">@color/abc_search_url_text_pressed</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">bottom|center_horizontal</item>
         <item name="android:paddingTop">4dp</item>
@@ -19,11 +20,6 @@
         <item name="android:textSize">12sp</item>
         <item name="iconWidth">27dp</item>
         <item name="iconHeight">27dp</item>
-    </style>
-
-    <style name="MyActionBar" parent="AppTheme">
-        <item name="android:background">@color/actionbar_bg_color</item>
-        <item name="android:textColor">@color/actionbar_text_color</item>
     </style>
 
 </resources>

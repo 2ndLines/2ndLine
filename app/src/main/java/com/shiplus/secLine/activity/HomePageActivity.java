@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -26,7 +25,6 @@ public class HomePageActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
         findViews();
     }
 
@@ -39,17 +37,17 @@ public class HomePageActivity extends BaseActivity {
     private void initFragments(){
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
         BaseFragment homeFragment = new BaseFragment();
-        homeFragment.setTitle(R.string.tab_title_home);
+        homeFragment.setTitle(getResources().getString(R.string.tab_title_home));
         homeFragment.setIconResId(R.drawable.tab_selector_home);
         adapter.addFragment(homeFragment);
 
         BaseFragment channelFragment = new BaseFragment();
-        channelFragment.setTitle(R.string.tab_title_channel);
+        channelFragment.setTitle(getResources().getString(R.string.tab_title_channel));
         channelFragment.setIconResId(R.drawable.tab_selector_channel);
         adapter.addFragment(channelFragment);
 
         BaseFragment mineFragment = new BaseFragment();
-        mineFragment.setTitle(R.string.tab_title_mine);
+        mineFragment.setTitle(getResources().getString(R.string.tab_title_mine));
         mineFragment.setIconResId(R.drawable.tab_selector_mine);
         adapter.addFragment(mineFragment);
 

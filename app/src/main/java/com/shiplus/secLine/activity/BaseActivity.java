@@ -3,14 +3,13 @@ package com.shiplus.secLine.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 
-import com.shiplus.secLine.R;
 
 /**
  * Created by Administrator on 2015/5/21.
  */
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends ActionBarActivity {
     private ActionBar actionBar;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,7 +19,6 @@ public class BaseActivity extends AppCompatActivity {
 
     private void initActionBar(){
         actionBar = getSupportActionBar();
-        actionBar.setLogo(R.mipmap.logo_shekel_72);
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setDisplayUseLogoEnabled(false);
     }

@@ -195,6 +195,7 @@ public class IconPageIndicator extends LinearLayout implements IPageIndicator {
 
     @Override
     public void onPageSelected(int position) {
+        setCurrentItem(position);
         if(onPageChangeListener != null){
             onPageChangeListener.onPageSelected(position);
         }
@@ -217,7 +218,7 @@ public class IconPageIndicator extends LinearLayout implements IPageIndicator {
         }
 
         public TabView(Context context, AttributeSet attrs, int defStyle) {
-            super(context, attrs);
+            super(context, attrs, defStyle);
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TabView,defStyle,0);
             iconWidth = a.getDimensionPixelSize(R.styleable.TabView_iconWidth,0);
             iconHeight = a.getDimensionPixelOffset(R.styleable.TabView_iconHeight,0);
