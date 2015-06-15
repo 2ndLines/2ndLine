@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">PublicModel</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_preview">Preview</string>
+    <string name="text_confirm">Confirm</string>
+
+    <string name="text_folder_name"><xliff:g id="name">%s</xliff:g> (<xliff:g id="size">%s</xliff:g>)</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="text_native_pics">Native pictures</string>
+    <string name="text_all_images">All images</string>
+    <string name="image_description">image description</string>
+</resources>

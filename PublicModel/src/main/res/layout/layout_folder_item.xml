@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shiplus.model.picselector.view.SquareImageView
+        android:id="@+id/folder_image_view"
+        android:layout_width="@dimen/folder_cover_image_width"
+        android:layout_height="@dimen/folder_cover_image_height"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        style="@style/style_nav_list_text_view"
+        android:background="@drawable/abc_list_selector_holo_light"
+        android:id="@+id/folder_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="@string/text_folder_name"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PublicModel</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="text_preview">预览</string>
+    <string name="text_confirm">确定</string>
+    <string name="text_all_images">所有图片</string>
+</resources>

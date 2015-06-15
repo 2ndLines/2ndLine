@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="folder_cover_image_width">100dp</dimen>
+    <dimen name="folder_cover_image_height">100dp</dimen>
+    <dimen name="view_pager_spacing">10dp</dimen>
+    <dimen name="bottom_bar_height">48dp</dimen>
+</resources>

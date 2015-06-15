@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shiplus.model.picselector.view.CheckableFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkable_framelayout"
+    android:padding="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shiplus.model.picselector.view.SquareImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/text_native_pics"
+        />
+
+    <!--android:button="@drawable/selector_checkable"-->
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:button="@drawable/selector_checkable"
+        android:gravity="right|top"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone"/>
+
+</com.shiplus.model.picselector.view.CheckableFrameLayout>

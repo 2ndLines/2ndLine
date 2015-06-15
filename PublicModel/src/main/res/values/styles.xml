@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base" >
+
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light" >
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="normal_button_style" parent="Widget.AppCompat.Button" >
+    </style>
+
+    <style name="small_button_style" parent="Widget.AppCompat.Button.Small">
+    </style>
+
+    <style name="style_nav_list_text_view" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/ic_action_extension</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+</resources>
