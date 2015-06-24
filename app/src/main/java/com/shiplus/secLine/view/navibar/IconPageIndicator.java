@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -219,6 +220,7 @@ public class IconPageIndicator extends LinearLayout implements IPageIndicator {
 
         public TabView(Context context, AttributeSet attrs, int defStyle) {
             super(context, attrs, defStyle);
+            setGravity(Gravity.CENTER_HORIZONTAL);
             TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TabView,defStyle,0);
             iconWidth = a.getDimensionPixelSize(R.styleable.TabView_iconWidth,0);
             iconHeight = a.getDimensionPixelOffset(R.styleable.TabView_iconHeight,0);

@@ -17,7 +17,8 @@ public class AVProduct extends AVObject {
     * city,
     * district,
     * view count,
-    *
+    * follow,
+    * topic
     * */
 
     public void setCreator(AVUser2 user){

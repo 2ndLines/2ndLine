@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="tabView">@style/MyTabView</item>
-        <item name="android:actionBarStyle"></item>
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="tabView">@style/NavBarStyle</item>
+        <item name="android:listDivider">@drawable/abc_list_divider_mtrl_alpha</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
     </style>
 
     <!-- Navigation bar tab view style -->
-    <style name="MyTabView">
+    <style name="NavBarStyle">
         <item name="android:background">@color/abc_search_url_text_pressed</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">bottom|center_horizontal</item>
@@ -20,6 +27,10 @@
         <item name="android:textSize">12sp</item>
         <item name="iconWidth">27dp</item>
         <item name="iconHeight">27dp</item>
+    </style>
+
+    <style name="GlobalActionbar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@color/actionbar_bg_color</item>
     </style>
 
 </resources>

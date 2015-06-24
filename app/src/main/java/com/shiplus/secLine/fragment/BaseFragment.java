@@ -1,11 +1,8 @@
 package com.shiplus.secLine.fragment;
 
-import android.app.FragmentManager;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +41,7 @@ public class BaseFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView textView = (TextView) inflater.inflate(R.layout.layout_fragment_base,container,false);
+        TextView textView = (TextView) inflater.inflate(R.layout.fragment_base,container,false);
         textView.setText(getTitle());
         return textView;
     }

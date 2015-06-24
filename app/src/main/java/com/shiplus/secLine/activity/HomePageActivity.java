@@ -1,5 +1,6 @@
 package com.shiplus.secLine.activity;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -8,8 +9,10 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.shiplus.model.picselector.PictureSelector;
 import com.shiplus.secLine.R;
 import com.shiplus.secLine.fragment.BaseFragment;
+import com.shiplus.secLine.fragment.HomePageFragment;
 import com.shiplus.secLine.view.navibar.IIconPagerAdapter;
 import com.shiplus.secLine.view.navibar.IconPageIndicator;
 
@@ -25,6 +28,7 @@ public class HomePageActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        initActionBar();
         findViews();
     }
 
@@ -36,7 +40,7 @@ public class HomePageActivity extends BaseActivity {
 
     private void initFragments(){
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
-        BaseFragment homeFragment = new BaseFragment();
+        BaseFragment homeFragment = new HomePageFragment();
         homeFragment.setTitle(getResources().getString(R.string.tab_title_home));
         homeFragment.setIconResId(R.drawable.tab_selector_home);
         adapter.addFragment(homeFragment);
@@ -55,7 +59,6 @@ public class HomePageActivity extends BaseActivity {
         mTabWidget.setViewPager(mViewPager);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -71,7 +74,9 @@ public class HomePageActivity extends BaseActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_add) {
+            Intent intent = new Intent(this, PictureSelector.class);
+            startActivity(intent);
             return true;
         }
 

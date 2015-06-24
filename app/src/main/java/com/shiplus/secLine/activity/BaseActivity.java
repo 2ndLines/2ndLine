@@ -4,34 +4,33 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
+import com.shiplus.secLine.R;
 
 
 /**
  * Created by Administrator on 2015/5/21.
  */
-public class BaseActivity extends ActionBarActivity {
-    private ActionBar actionBar;
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        initActionBar();
-    }
+public class BaseActivity extends AppCompatActivity {
 
-    private void initActionBar(){
-        actionBar = getSupportActionBar();
-        actionBar.setDisplayShowTitleEnabled(false);
-        actionBar.setDisplayUseLogoEnabled(false);
+    protected void initActionBar(){
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayUseLogoEnabled(false);
     }
 
     protected void enableHomeAsUp(boolean enable){
-        actionBar.setDefaultDisplayHomeAsUpEnabled(enable);
+        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(enable);
     }
 
     protected void showLogo(){
-        actionBar.setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
     }
 
     protected void showTitle(){
-        actionBar.setDisplayShowTitleEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true);
     }
 }
